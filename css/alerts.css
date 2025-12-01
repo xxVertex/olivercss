@@ -1,0 +1,159 @@
+/* =========================================================
+    Oliver CSS Framework - Alerts Module
+    Provides alert components with variants, dismiss button,
+    animations, icons, and utility classes.
+========================================================= */
+
+/* ===========================
+    BASE ALERT
+=========================== */
+.alert {
+    padding: var(--space-3, 1rem) var(--space-4, 1.25rem);
+    border-radius: var(--radius-md, 6px);
+    border: 1px solid transparent;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+    margin-bottom: var(--space-3, 1rem);
+    animation: fadeIn 0.3s var(--ani-ease, ease);
+    }
+
+/* ===========================
+    COLOR VARIANTS
+=========================== */
+.alert-primary {
+    background-color: #e7f0ff;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.alert-secondary {
+    background-color: #f0f0f0;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.alert-success {
+    background-color: #e6f5ea;
+    border-color: var(--success-color);
+    color: var(--success-color);
+}
+
+.alert-danger {
+    background-color: #fde8e8;
+    border-color: var(--danger-color);
+    color: var(--danger-color);
+}
+
+.alert-warning {
+    background-color: #fff4e5;
+    border-color: var(--warning-color);
+    color: #7a4d00;
+}
+
+.alert-info {
+    background-color: #e5f7ff;
+    border-color: var(--info-color);
+    color: var(--info-color);
+}
+
+.alert-light {
+    background-color: var(--light-color);
+    border-color: var(--gray-300);
+    color: #333;
+}
+
+.alert-dark {
+    background-color: #2b2b2b;
+    border-color: var(--dark-color);
+    color: #fff;
+}
+
+/* ===========================
+    OUTLINE ALERTS
+=========================== */
+.alert-outline {
+    background-color: transparent;
+}
+
+.alert-outline-primary { border-color: var(--primary-color); color: var(--primary-color); }
+.alert-outline-secondary { border-color: var(--secondary-color); color: var(--secondary-color); }
+.alert-outline-success { border-color: var(--success-color); color: var(--success-color); }
+.alert-outline-danger { border-color: var(--danger-color); color: var(--danger-color); }
+.alert-outline-warning { border-color: var(--warning-color); color: var(--warning-color); }
+.alert-outline-info { border-color: var(--info-color); color: var(--info-color); }
+.alert-outline-light { border-color: var(--gray-300); color: var(--light-color); }
+.alert-outline-dark { border-color: var(--dark-color); color: var(--dark-color); }
+
+/* ===========================
+    DISMISSIBLE ALERTS
+=========================== */
+.alert-dismissible {
+    padding-right: 3rem;
+}
+
+.alert-close {
+    position: absolute;
+    right: 0.75rem;
+    top: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    color: inherit;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.alert-close:hover {
+    opacity: 1;
+}
+
+/* Close animation */
+@keyframes alertFadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+/* Helper class for JavaScript-controlled dismissal */
+.alert-hide {
+    animation: alertFadeOut 0.3s forwards ease;
+}
+
+/* ===========================
+    ALERT WITH ICONS
+=========================== */
+.alert-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.alert-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+}
+
+/* ===========================
+    SHAPES & SHADOWS
+=========================== */
+.alert-rounded { border-radius: var(--radius-lg); }
+.alert-pill { border-radius: 50px; }
+
+.alert-shadow-sm { box-shadow: var(--shadow-sm); }
+.alert-shadow-md { box-shadow: var(--shadow-md); }
+.alert-shadow-lg { box-shadow: var(--shadow-lg); }
+
+/* ===========================
+    TRANSITIONS
+=========================== */
+.alert {
+    transition: all 0.3s var(--ani-ease, ease);
+}
