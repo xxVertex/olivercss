@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilities – Oliver CSS</title>
+
+  <!-- Oliver CSS -->
+  <link rel="stylesheet" href="../dist/oliver.min.css">
+
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+
+    nav {
+      background: #f5f5f5;
+      border-bottom: 1px solid #ddd;
+      padding: 12px 25px;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: var(--primary, #4a6cf7);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    pre {
+      background: #f0f0f0;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+
+    .section {
+      margin-top: 60px;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    .utility-demo {
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      background: #fafafa;
+      border: 1px solid #ddd;
+    }
+
+    .demo-box {
+      padding: 20px;
+      background: #e6e6ff;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="getting-started.html">Getting Started</a>
+    <a href="components.html">Components</a>
+    <a href="utilities.html">Utilities</a>
+    <a href="layout.html">Layout</a>
+  </nav>
+
+  <div class="container">
+
+    <h1>Utilities</h1>
+    <p>Utilities provide small, reusable classes to control spacing, typography, colors, borders, display, and more. Oliver CSS includes a large set of fast and flexible utility classes.</p>
+
+    <!-- SPACING -->
+    <div class="section">
+      <h2>Spacing</h2>
+      <p>Use <code>.m-*</code> and <code>.p-*</code> for margin and padding.</p>
+
+      <div class="utility-demo">
+        <div class="demo-box m-4">margin 4</div>
+        <div class="demo-box p-4">padding 4</div>
+      </div>
+
+      <pre>
+&lt;div class="m-4"&gt;Margin 4&lt;/div&gt;
+&lt;div class="p-4"&gt;Padding 4&lt;/div&gt;
+      </pre>
+    </div>
+
+    <!-- TEXT -->
+    <div class="section">
+      <h2>Text Utilities</h2>
+
+      <div class="utility-demo">
+        <p class="text-center">Centered Text</p>
+        <p class="text-right">Right Aligned Text</p>
+        <p class="text-uppercase">Uppercase Example</p>
+      </div>
+
+      <pre>
+&lt;p class="text-center"&gt;Centered text&lt;/p&gt;
+&lt;p class="text-right"&gt;Right aligned&lt;/p&gt;
+&lt;p class="text-uppercase"&gt;Uppercase&lt;/p&gt;
+      </pre>
+    </div>
+
+    <!-- COLORS -->
+    <div class="section">
+      <h2>Colors</h2>
+
+      <div class="utility-demo">
+        <div class="demo-box bg-primary text-light">Primary Background</div>
+        <div class="demo-box bg-success text-light">Success Background</div>
+      </div>
+
+      <pre>
+&lt;div class="bg-primary text-light"&gt;Primary background&lt;/div&gt;
+&lt;div class="bg-success text-light"&gt;Success background&lt;/div&gt;
+      </pre>
+    </div>
+
+    <!-- DISPLAY -->
+    <div class="section">
+      <h2>Display Utilities</h2>
+
+      <div class="utility-demo">
+        <div class="d-flex justify-center">Centered Flex Row</div>
+      </div>
+
+      <pre>
+&lt;div class="d-flex justify-center"&gt;Centered flex row&lt;/div&gt;
+      </pre>
+    </div>
+
+    <!-- FLEX -->
+    <div class="section">
+      <h2>Flexbox Utilities</h2>
+
+      <div class="utility-demo">
+        <div class="d-flex justify-between bg-light p-2">
+          <span>Item 1</span>
+          <span>Item 2</span>
+        </div>
+      </div>
+
+      <pre>
+&lt;div class="d-flex justify-between"&gt;
+  &lt;span&gt;Item 1&lt;/span&gt;
+  &lt;span&gt;Item 2&lt;/span&gt;
+&lt;/div&gt;
+      </pre>
+    </div>
+
+    <!-- BORDERS -->
+    <div class="section">
+      <h2>Borders & Shadows</h2>
+
+      <div class="utility-demo">
+        <div class="demo-box border">Border</div>
+        <div class="demo-box shadow">Shadow</div>
+        <div class="demo-box rounded">Rounded</div>
+      </div>
+
+      <pre>
+&lt;div class="border"&gt;Border&lt;/div&gt;
+&lt;div class="shadow"&gt;Shadow&lt;/div&gt;
+&lt;div class="rounded"&gt;Rounded&lt;/div&gt;
+      </pre>
+    </div>
+
+    <!-- VISIBILITY -->
+    <div class="section">
+      <h2>Visibility</h2>
+
+      <div class="utility-demo">
+        <p class="visible">Visible Element</p>
+        <p class="hidden">Hidden Element</p>
+      </div>
+
+      <pre>
+&lt;p class="visible"&gt;Visible&lt;/p&gt;
+&lt;p class="hidden"&gt;Hidden&lt;/p&gt;
+      </pre>
+    </div>
+
+  </div>
+
+  <footer>
+    Oliver CSS Framework • MIT License • © 2025
+  </footer>
+
+</body>
+</html>

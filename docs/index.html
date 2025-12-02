@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oliver CSS - Documentation</title>
+
+  <!-- Oliver CSS Framework -->
+  <link rel="stylesheet" href="../dist/oliver.min.css">
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: var(--primary, #4a6cf7);
+      padding: 60px 40px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background: #f5f5f5;
+      border-bottom: 1px solid #ddd;
+      padding: 12px 25px;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--primary, #4a6cf7);
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 40px 20px;
+      margin: auto;
+    }
+
+    pre {
+      background: #f0f0f0;
+      padding: 12px;
+      border-radius: 6px;
+      overflow: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .feature-box {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="getting-started.html">Getting Started</a>
+    <a href="components.html">Components</a>
+    <a href="utilities.html">Utilities</a>
+    <a href="layout.html">Layout</a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header>
+    <h1>Oliver CSS Framework</h1>
+    <p>A modern, lightweight, modular CSS framework built for speed and simplicity.</p>
+  </header>
+
+  <div class="container">
+
+    <!-- QUICK START -->
+    <section>
+      <h2>Quick Start</h2>
+      <p>Add Oliver CSS to your project instantly:</p>
+
+      <pre>
+&lt;link rel="stylesheet" href="dist/oliver.min.css"&gt;
+      </pre>
+
+      <p>Or install via npm:</p>
+
+      <pre>
+npm install cssoliver
+      </pre>
+    </section>
+
+    <!-- FEATURES -->
+    <section>
+      <h2>Features</h2>
+
+      <div class="features">
+        <div class="feature-box">
+          <h3>🎨 Utility Classes</h3>
+          <p>Spacing, colors, text, display, flexbox, borders, and more.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>📦 Modular Structure</h3>
+          <p>Clean architecture with core files and component modules.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>⚡ Lightweight</h3>
+          <p>Minimal overhead with zero JavaScript required.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>📱 Fully Responsive</h3>
+          <p>Mobile-first breakpoints and responsive utilities.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>🧩 Components</h3>
+          <p>Buttons, cards, alerts, navbar, modals, forms, and more.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>🎚 Customizable</h3>
+          <p>Theme everything using CSS variables (colors, spacing, radius…)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXAMPLE -->
+    <section style="margin-top: 40px;">
+      <h2>Example</h2>
+      <p>Here's a simple example using Oliver CSS:</p>
+
+      <pre>
+&lt;div class="card p-4 shadow rounded"&gt;
+  &lt;h3&gt;Hello World&lt;/h3&gt;
+  &lt;p&gt;This is a card using Oliver CSS.&lt;/p&gt;
+  &lt;button class="btn btn-primary"&gt;Click Me&lt;/button&gt;
+&lt;/div&gt;
+      </pre>
+    </section>
+  </div>
+
+  <footer>
+    Oliver CSS Framework • MIT License • © 2025  
+  </footer>
+
+</body>
+</html>
