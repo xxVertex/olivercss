@@ -160,12 +160,13 @@ src/
   animations.css
   responsive.css
   utilities.css
-  forms.css
-  buttons.css
-  cards.css
-  alerts.css
-  navbar.css
-  modals.css
+  components/
+    forms.css
+    buttons.css
+    cards.css
+    alerts.css
+    navbar.css
+    modals.css
   framework.css   (imports everything)
 ```
 
