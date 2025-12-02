@@ -1,23 +1,23 @@
 {
-  "name": "olivercss",
+  "name": "cssoliver",
   "version": "1.0.0",
-  "description": "[![Version](https://img.shields.io/github/v/release/xxVertex/oliver-css)](https://github.com/xxVertex/cssoliver/releases) [![GitHub stars](https://img.shields.io/github/stars/xxVertex/oliver-css)](https://github.com/xxVertex/cssoliver/stargazers) [![GitHub forks](https://img.shields.io/github/forks/xxVertex/oliver-css)](https://github.com/xxVertex/cssoliver/network) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)",
+  "description": "[![Version](https://img.shields.io/github/v/release/xxVertex/cssoliver](https://github.com/xxVertex/cssoliver/releases) [![GitHub stars](https://img.shields.io/github/stars/xxVertex/cssoliver)](https://github.com/xxVertex/cssoliver/stargazers) [![GitHub forks](https://img.shields.io/github/forks/xxVertex/cssoliver)](https://github.com/xxVertex/cssoliver/network) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/framework.css -o dist/oliver.css",
-    "build:min": "postcss css/framework.css -o dist/oliver.min.css"
+    "build": "postcss css/framework.css -o dist/cssoliver.css",
+    "build:min": "postcss css/framework.css -o dist/cssoliver.min.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xxVertex/olivercss.git"
+    "url": "git+https://github.com/xxVertex/cssoliver.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xxVertex/olivercss/issues"
+    "url": "https://github.com/xxVertex/cssoliver/issues"
   },
-  "homepage": "https://github.com/xxVertex/olivercss#readme",
+  "homepage": "https://github.com/xxVertex/cssoliver#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.22",
     "cssnano": "^7.1.2",
